@@ -10,8 +10,11 @@
 //*        Ir a la definición F12
 //*
 
-import { saludar } from './extra/funciones';
+// Ctrl + shif + t   abrir definicion
+// Ctrl + w     cerrar definicion
 
-const saludo = saludar( 'Thanos' );
+import { saludar } from "./extra/funciones";
+
+const saludo = saludar("Thanos");
 
 console.log(saludo);
