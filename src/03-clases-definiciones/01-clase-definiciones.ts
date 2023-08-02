@@ -13,44 +13,42 @@
 //*        Se pueden agrupar si después de la @, se escriben :
 //*
 
-
 class SuperHero {
+  name: string = "";
+  power: string = "";
+  age: number = 0;
+  hobbies: string[] = [];
 
-    name   : string = '';
-    power  : string = '';
-    age    : number = 0;
-    hobbies: string[] = [];
+  // tslint:disable-next-line:variable-name
+  private _secretName: string = "";
 
-    // tslint:disable-next-line:variable-name
-    private _secretName: string = '';
+  constructor() {}
 
-    constructor() { }
+  usePower() {}
 
-    usePower() {}
+  fly() {}
 
-    fly() {}
+  run() {}
 
-    run() {}
+  walk() {}
 
-    walk() {}
+  revive() {}
 
-    revive() {}
+  // Sólo para demostración
 
-    // Sólo para demostración
+  name2: string = "";
 
-    name2: string = '';
+  power2: string = "";
 
-    power2: string = '';
+  age2: number = 0;
 
-    age2: number = 0;
+  hobbies2: string[] = [];
 
-    hobbies2: string[] = [];
+  set secretName(value: string) {
+    this._secretName = value;
+  }
 
-    set secretName(value: string) {
-        this._secretName = value;
-    }
-
-    get secretName() {
-        return this._secretName;
-    }
+  get secretName() {
+    return this._secretName;
+  }
 }

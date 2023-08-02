@@ -1,27 +1,24 @@
+export class Hero {
+  name: string = "";
+  power: string = "";
+  age: number = 0;
+  hobbies: string[] = [];
 
-export class SuperHero {
+  private _secretName: string = "";
 
-    name   : string = '';
-    power  : string = '';
-    age    : number = 0;
-    hobbies: string[] = [];
+  constructor() {}
 
-    private _secretName: string = '';
+  get secretName() {
+    return this._secretName;
+  }
 
-    constructor() { }
+  usePower() {}
 
-    get secretName() {
-        return this._secretName;
-    }
+  fly() {}
 
-    usePower() {}
+  run() {}
 
-    fly() {}
+  walk() {}
 
-    run() {}
-
-    walk() {}
-
-    revive() {}
-
+  revive() {}
 }
